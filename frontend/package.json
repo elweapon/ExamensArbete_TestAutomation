@@ -1,0 +1,21 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "faker": "^5.5.3"
+  },
+  "devDependencies": {
+    "cypress": "^9.5.1",
+    "mochawesome": "^7.1.2"
+  },
+  "scripts": {
+    "open": "cypress open",
+    "moc": "cypress run --reporter mochawesome --spec cypress/integration/kogiTest.spec.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
