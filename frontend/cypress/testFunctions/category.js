@@ -449,5 +449,4 @@ module.exports = {
     tillbehor,
     reservdelar,
     leverantorer
-
 }

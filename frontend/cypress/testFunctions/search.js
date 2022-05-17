@@ -11,18 +11,21 @@ const longSearch2041 =
 const searchField = '#SearchTxt_txtField';
 const element_SearchResult = '.searchResult';
 
+// Search term that is good/working
 export function goodCopSearch() {
   cy.get(searchField).type(good_Cop);
   cy.get('#SearchBtn').click();
   cy.get(element_SearchResult).invoke('text').should('include', good_Cop);
 }
 
+// Search term that is bad/not working
 export function badCopSearch() {
   cy.get(searchField).type(bad_Cop);
   cy.get('#SearchBtn').click();
   cy.get(element_SearchResult).invoke('text').should('include', bad_Cop);
 }
 
+// Search term that is long (2041 characters)
 export function LongSerchTerm() {
   cy.get(searchField).type(longSearch2041);
   cy.get('#SearchBtn').click();
